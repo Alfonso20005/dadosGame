@@ -35,6 +35,7 @@ Si deseas personalizar la apariencia del juego:
 - Cambia la lógica del juego o agrega nuevas funciones en `script.js`. 🛠️
 
 ## 🖼️ Captura de Pantalla
+![https://github.com/Alfonso20005/dadosGame](img/capturaDados.JPG)
 
 > [!IMPORTANT]\
 > Este juego ha sido creado para utilizarse como juego para una web de compras u otro tipo de cosas, es por ello que solo puedes jugar una vez al dia.
