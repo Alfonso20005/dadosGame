@@ -41,14 +41,14 @@ Si deseas personalizar la apariencia del juego:
 > Si lo quieres tener para poder jugar las veces que quieras tienes que quitar este bloque de codigo:
 
 ```bash
-const lastPlayedGame1 = localStorage.getItem('lastPlayedDateGame1');
+const lastPlayed = localStorage.getItem('lastPlayedDate');
     const currentDate = new Date().toDateString();
 
-    if (lastPlayedGame1 === currentDate) {
+    if (lastPlayed === currentDate) {
         alert("¡Ya has jugado hoy! Vuelve mañana para seguir divirtiéndote.");
         return;
-    } else {
-        localStorage.setItem('lastPlayedDateGame1', currentDate);
+    }else{
+        localStorage.setItem('lastPlayedDate', currentDate);
     }
 ````
 
