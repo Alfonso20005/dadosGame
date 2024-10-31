@@ -36,8 +36,20 @@ Si deseas personalizar la apariencia del juego:
 
 ## 🖼️ Captura de Pantalla
 
-> 💡 ¡Asegúrate de tener las imágenes de los dados disponibles en la carpeta `img` para obtener una experiencia completa!
+> [!IMPORTANT]\
+> Este juego ha sido creado para utilizarse como juego para una web de compras u otro tipo de cosas, es por ello que solo puedes jugar una vez al dia.
+> Si lo quieres tener para poder jugar las veces que quieras tienes que quitar este bloque de codigo:
 
----
+```bash
+const lastPlayedGame1 = localStorage.getItem('lastPlayedDateGame1');
+    const currentDate = new Date().toDateString();
+
+    if (lastPlayedGame1 === currentDate) {
+        alert("¡Ya has jugado hoy! Vuelve mañana para seguir divirtiéndote.");
+        return;
+    } else {
+        localStorage.setItem('lastPlayedDateGame1', currentDate);
+    }
+````
 
 ¡Diviértete lanzando los dados y disfruta de DadosGame! 🎲👾
